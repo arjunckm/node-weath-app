@@ -1,5 +1,3 @@
-console.log("Client side js file");
-
 const weatherData = (addressurl, callback) => {
   fetch(addressurl).then(response => {
     response.json().then(data => {
