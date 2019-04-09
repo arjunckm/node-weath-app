@@ -22,7 +22,11 @@ const forecast = (lati, longi, callback) => {
           body.currently.temperature +
           " degrees Celsius out. There is a " +
           body.currently.precipProbability +
-          "% chance of rain."
+          "% chance of rain. Current Humidity is " +
+          body.currently.humidity +
+          " and wind speed is " +
+          body.currently.windSpeed +
+          " kmh/mh"
       );
     }
   });
